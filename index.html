@@ -29,19 +29,21 @@
         <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <video autoplay loop muted poster="rumarino-bg-pic.png" id="background">
+
+        <video controls autoplay loop muted poster="rumarino-bg-pic.png" id="background">
             <source src="rumarino-bg.mp4" type="video/mp4">
         </video>
 
         <div id="body-bg">
-        
+
             <!-- Top Menu -->
             <div id="header-sticky-wrapper" class="sticky-wrapper is-sticky" style="height:50px;">
-            <div id="header" style="position: fixed; top: 0px;">
-                
+            <div id="header" class="hidden-xs hidden-md visible-lg" style="position: fixed; top: 0px;">
+
                 <!-- Logo -->
-                <div class="logo" style="position: fixed; top: 20px; left: 5px;">
-                    <img src="assets/img/logo-rumarino2.png" alt="Logo" />
+                <div class="logo hidden-xs" style="position: fixed; top: 10px; left: 5px;">
+                    <!--<img src="assets/img/logo-rumarino2.png" alt="Logo" />-->
+                    <img src="assets/img/Logo.png" alt="Logo">
                 </div>
                 <!-- End Logo -->
 
@@ -59,14 +61,14 @@
                                 <li>
                                     <a href="index.html" class="fa-home">Home</a>
                                 </li>
-                                <li> 
+                                <li>
                                     <a href="the-team.html" class="fa-info">About Us</a>
                                 </li>
                                 <li>
                                     <span class="fa-users">Teams</span>
                                     <ul>
                                         <li>
-                                            <a href="software-team.html">Software</a>
+                                            <a href="software-team.html">Programming</a>
                                         </li>
                                         <li>
                                             <a href="electrical-team.html">Electrical</a>
@@ -79,7 +81,7 @@
                                         </li>
                                     </ul>
                                 </li>
-            
+
                                 <li>
                                     <span class="fa-th">Vehicles</span>
                                     <ul>
@@ -102,12 +104,12 @@
             </div>
             </div>
         </div>
-            
+
             <!-- End Top Menu -->
 
-            <div id="post_header" class="container" style="height:100px">
+            <div id="post_header" class="container hidden-xs" style="height:100px">
             </div>
- 
+
             <div id="content-top-border" class="container">
             </div>
             <!-- === END HEADER === -->
@@ -133,28 +135,32 @@
                             <!-- End Carousel Indicators -->
                             <!-- Carousel Images -->
                             <div class="carousel-inner">
+                                <!-- <div class="item active">
+                                    <img src="assets/img/slideshow/uc.png">
+                                </div> -->
                                 <div class="item active">
-                                    <img src="assets/img/slideshow/team2.png">
+                                    <!-- <img src="assets/img/slideshow/team2.png"> -->
+                                    <img src="assets/img/team.png">
                                 </div>
                                 <div class="item">
                                     <img src="assets/img/slideshow/crome-2.png">
                                 </div>
                                 <div class="item">
-                                    <img src="assets/img/slideshow/rumarino.png">
+                                    <img src="assets/img/slideshow/logo-rum.png">
                                 </div>
 
                             </div>
                             <!-- End Carousel Images -->
 
                             <!-- Carousel Controls -->
-                            
+
                             <a class="left carousel-control" href="#carousel-example" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left"></span>
                             </a>
                             <a class="right carousel-control" href="#carousel-example" data-slide="next">
                                 <span class="glyphicon glyphicon-chevron-right"></span>
                             </a>
-                            
+
                             <!-- End Carousel Controls -->
                         </div>
                         <!-- End Carousel Slideshow -->
@@ -162,66 +168,80 @@
                 </div>
                 <div id="content-bottom-border" class="container">
                 </div>
-                
+
                 <div id="post_header" class="container" style="height:50px">
                 </div>
 
                 <div id="content-top-border" class="container">
                 </div>
 
+                <!--
                 <div class="container background-gray-lighter">
                     <div class="row margin-vert-40">
-                        <div class="col-md-4">
-                            <div class="col-md-4">
+                        <div class="col-md-4 col-xs-3" style="padding-left: 0;">
+                            <div class="col-md-4 col-xs-3">
                                 <i class="fa-calendar-o fa-5x color-primary"></i>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-xs-8">
                                 <h2 class="margin-top-5 margin-bottom-0">108</h2>
                                 <p>WORKING DAYS</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="col-md-4">
+                        <div class="col-md-4 col-xs-3">
+                            <div class="col-md-4 col-xs-3">
                                 <i class="fa-calendar fa-5x color-primary"></i>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-xs-8">
                                 <h2 class="margin-top-5 margin-bottom-0">15.42</h2>
                                 <p>WORKING WEEKS</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="col-md-4">
+                        <div class="col-md-4 col-xs-3">
+                            <div class="col-md-4 col-xs-3">
                                 <i class="fa-clock-o fa-5x color-primary"></i>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-xs-8">
                                 <h2 class="margin-top-5 margin-bottom-0">432</h2>
                                 <p>WORKING HOURS</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                -->
+
                 <div class="container background-white">
                     <div class="row margin-vert-30">
                         <!-- Main Text -->
                         <div class="col-md-12">
                             <h2 class="text-center">News Feed</h2>
-                            <p class="text-center">Rumarino shit going on here. Check this stuff out. You'll like it. Check it! BYE.</p>
+                            <!-- <p class="text-center">Interesting RUMarino posts, don't forget to check them out!</p> -->
                         </div>
                         <!-- End Main Text -->
                     </div>
                 </div>
+
                 <div class="container background-white">
+
+                    <div align="middle" class="hidden-xs hidden-sm animate fadeInUp">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRUMarino-203873799960401%2F&tabs=timeline&width=500&height=650&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="650" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                     <div align="middle" class="hidden-md hidden-lg animate fadeInUp">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRUMarino-203873799960401%2F&tabs=timeline&width=320&height=650&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="320" height="650" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+
                     <div class="row padding-vert-20">
+                    </div>
+                    <!--<div class="row padding-vert-20">
                         <div class="col-md-1">
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-xs-12"> -->
                             <!-- Portfolio -->
-                            <ul class="portfolio-group">
+                            <!--<ul class="portfolio-group">-->
                                 <!-- Portfolio Item -->
-                                <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                                    <a href="#">
+                                <!--<li class="portfolio-item col-sm-6 col-xs-12 padding-20">
+
                                         <figure class="animate fadeInLeft">
-                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D310314402649673%26id%3D203873799960401%26substory_index%3D0&width=350" width="350" height="410" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D310314402649673%26id%3D203873799960401%26substory_index%3D0&width=350" width="350" height="410" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>-->
                                             <!--
                                             <img alt="image1" src="assets/img/frontpage/image1.jpg">
                                             <figcaption>
@@ -229,32 +249,32 @@
                                                 <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
                                             </figcaption>-->
 
-                                        </figure>
-                                    </a>
-                                </li>
+                                       <!-- </figure>
+
+                                </li>-->
                                 <!-- //Portfolio Item// -->
 
                                 <!-- Portfolio Item -->
-                                <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                                    <a href="#">
+                                <!--<li class="portfolio-item col-sm-6 col-xs-12 padding-20">
+
                                         <figure class="animate fadeInRight">
-                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D310026182678495%26id%3D203873799960401&width=350" width="350" height="510" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D310026182678495%26id%3D203873799960401&width=350" width="350" height="510" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>-->
                                             <!--
                                             <img alt="image1" src="assets/img/frontpage/image1.jpg">
                                             <figcaption>
                                                 <h3>Placerat facer possim</h3>
                                                 <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
                                             </figcaption>-->
-                                        </figure>
-                                    </a>
-                                </li>
+                                        <!--</figure>
+
+                                </li>-->
                                 <!-- //Portfolio Item// -->
 
                                 <!-- Portfolio Item -->
-                                <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                                    <a href="#">
+                                <!--<li class="portfolio-item col-sm-6 col-xs-12 padding-20">
+
                                         <figure class="animate fadeInLeft">
-                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D232510630430051%26id%3D203873799960401%26substory_index%3D0&width=350" width="350" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D232510630430051%26id%3D203873799960401%26substory_index%3D0&width=350" width="350" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>-->
                                             <!--
                                             <img alt="image3" src="assets/img/frontpage/image3.jpg">
                                             <figcaption>
@@ -262,16 +282,16 @@
                                                 <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
                                             </figcaption>
                                             -->
-                                        </figure>
-                                    </a>
-                                </li>
+                                        <!--</figure>
+
+                                </li>-->
                                 <!-- //Portfolio Item// -->
 
                                 <!-- Portfolio Item -->
-                                <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                                    <a href="#">
+                                <!--<li class="portfolio-item col-sm-6 col-xs-12 padding-20">
+
                                         <figure class="animate fadeInRight">
-                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D231554720525642%26id%3D203873799960401&width=350" width="350" height="750" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D231554720525642%26id%3D203873799960401&width=350" width="350" height="750" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>-->
                                             <!--
                                             <img alt="image4" src="assets/img/frontpage/image4.jpg">
                                             <figcaption>
@@ -279,28 +299,29 @@
                                                 <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
                                             </figcaption>
                                             -->
-                                        </figure>
-                                    </a>
-                                </li>
-                                <!-- //Portfolio Item// -->
-                               
-                               <!-- Portfolio Item -->
-                                <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                                    <a href="#">
-                                        <figure class="animate fadeInLeft">
-                                            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F203873799960401%2Fvideos%2F269776153370165%2F&show_text=0&width=350" width="350" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-                                      
-                                        </figure>
-                                    </a>
-                                </li>
+                                        <!--</figure>
+
+                                </li>-->
                                 <!-- //Portfolio Item// -->
 
-                            </ul>
+                               <!-- Portfolio Item -->
+                                <!--<li class="portfolio-item col-sm-6 col-xs-12 padding-20">
+
+                                        <figure class="animate fadeInLeft">
+                                            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F203873799960401%2Fvideos%2F269776153370165%2F&show_text=0&width=350" width="350" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+                                        </figure>
+
+                                </li>-->
+                                <!-- //Portfolio Item// -->
+
+                            <!--</ul>-->
                             <!-- End Portfolio -->
-                        </div>
+                        <!--</div>
                         <div class="col-md-1">
                         </div>
-                    </div>
+                    </div>-->
+
                 </div>
                 <div class="container background-gray-lighter">
                     <div class="row padding-vert-40">
@@ -315,7 +336,7 @@
                 </div>
             </div>
             <!-- === END CONTENT === -->
-    
+
             <!-- === BEGIN FOOTER === -->
 
             <div id="content-bottom-border" class="container">
