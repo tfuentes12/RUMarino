@@ -119,8 +119,9 @@
                         <div class="col-md-12">
                             <h2 class="margin-vert-20">Electrical Systems</h2>
                             <div class="row margin-bottom-30">
-                                <div class="col-md-8 animate fadeInLeft">
-                                    <p></p>
+                                <div class="col-md-6 animate fadeInLeft">
+                                    <p>The electrical engineering team is responsible for designing, testing and implementing different systems, for example, a kill switch for emergencies, voltage regulators for the different components, as well as designing and implementing different Printed Circuit Boards (PCB).</p>
+                                    <p class="margin-bottom-30">The electrical team is also in charge of designing digital controllers to implement in the system, as well as developing digital filters for our underwater microphones (Hydrophones).</p>
                                 </div>
 
                             </div>
@@ -131,7 +132,7 @@
                                         <a href="#sample-1a" data-toggle="tab">Controls System</a>
                                     </li>
                                     <li>
-                                        <a href="#sample-1b" data-toggle="tab">Navigation Systems</a>
+                                        <a href="#sample-1b" data-toggle="tab">Embedded Systems</a>
                                     </li>
                                     <li>
                                         <a href="#sample-1c" data-toggle="tab">Hydrophones</a>
@@ -150,11 +151,7 @@
                                             <div class="col-md-7">
                                                 <div class="clearfix"></div>
                                                 <h3 class="hidden-lg"><br></h3>
-                                                <p>Develop the dynamic equations of our AUV, linearize said equations, develop AUV control in simulink as well as transfer the code in a digitalized manner to a microcontroller that controls the AUV’s motors with PWM signals.</p>
-
-                                                <p>The data produced by the IMU is processed by an ATMega328 that is integrated with the 9 Degrees of Freedom Razor IMU which outputs the data by I2C Communication.</p>
-                                                <p>For modeling the system, we used rigid body dynamics and hydrodynamics concepts.</p>
-                                                <p>Simulation of system derived from models was done with estimated parameters in Simulink.</p>
+                                                <p>The control Systems team is in charge of the mechanical dynamics of the AUV, this includes developing the dynamic equations, linearizing them and transferring the digitalized code to a microcontroller in charge of the motion of the AUV The team is also in charge of the sensor fusion behind the peripherals and the control system. These peripherals include IMU’s and depth sensors. They are also in charge of calibrating said sensors and collecting data to be processed through our different filters.</p>
 
                                             </div>
                                             <div class="clearfix"></div>
@@ -274,24 +271,12 @@
                                     <div class="tab-pane fade in" id="sample-1b">
                                       <div class="row">
                                         <div class="col-md-5">
-                                          <img src="assets/img/fillers/navigation_systems.png" alt="filler image">
+                                          <img src="assets/img/fillers/embedded_systems.png" alt="filler image">
                                         </div>
                                         <div class="col-md-7">
                                           <div class="clearfix"></div>
                                           <h3 class="hidden-lg"><br></h3>
-                                          <p>Understand the behavior of our razor inertial measurement unit (IMU) and our depth sensor, characterize and calibrate the sensors, and develop the code that enables the sensors to interpret the data in a useful manner for our control system and mission logic.</p>
-                                          <p>We used 3 sensors for the system:<p>
-
-                                          <ul>
-                                            <li>9 Degrees of Freedom - Razor IMU:</li>
-                                            <ul>
-                                              <li>3-axis gyroscope</li>
-                                              <li>3-axis accelerometer</li>
-                                            </ul>
-                                            <li>Bar 30 Pressure Sensor</li>
-                                          </ul>
-
-                                          <p>The Bar 30 sensor communicates with an Arduino microcontroller via I2C Communication using the SDA (Data) and SCL (Clocking) pins.</p>
+                                          <p>The Embedded Systems team is in charge of establishing the communication between the sensors, the main computer and the microcontrollers. The team is also in charge of PCB design, servo manipulation and data collection for further processing.</p>
 
                                         </div>
 
@@ -378,22 +363,7 @@
                                       <div class="col-md-7">
                                         <div class="clearfix"></div>
                                         <h3 class="hidden-lg"><br></h3>
-                                        <p>Digital signal processing (DSP) of the signals captured through our hydrophone array, as well as develop an instrumentation channel to be printed on PCB as well as code for DSP microcontrollers to be able to locate the frequencies in the robosub competition.</p>
-                                        <p>In order to achieve our goals, we have:</p>
-                                        <ul>
-                                          <li>Used Instrumentation Amplifier</li>
-                                            <ul>
-                                              <li>Due to the hydrophone's low output voltage, the signal needs to be amplified</li>
-                                            </ul>
-                                          <li>Designed 4th-Order Butterworth Filter</li>
-                                            <ul>
-                                              <li>Due to the noisy underwater environment, the raw signal needs to be filtered in order to obtain a clean one</li>
-                                            </ul>
-                                          <li>Implemented Ultra-Short Baseline Method</li>
-                                            <ul>
-                                              <li>Due to how critical the hydrophone's position is for the mathematical analysis of the signals, the best method needs to be chosen</li>
-                                            </ul>
-                                        </ul>
+                                        <p>The Hydrophones team is in charge of the digital signal processing (DSP) of the signals captured through our hydrophone array. The team is also developing digital filters and cross correlation algorithims as well as the code for the DSP microcontrollers to be able to locate the different frequencies in the robosub competition. </p>
 
                                       </div>
                                       <div class="clearfix"></div>
@@ -480,20 +450,7 @@
                                     <div class="col-md-7">
                                       <div class="clearfix"></div>
                                       <h3 class="hidden-lg"><br></h3>
-                                      <p>Create all the circuits in order to distribute the power in different voltages to the different components, regulate voltages, develop a kill switch to turn off the AUV in case of emergency, as well as safely handle, store and utilize the LiPo batteries in our AUV.</p>
-
-                                      <p>For choosing the correct battery we went with the A123 26650. From battery parameters, these batteries have a high discharge/charge rate with better efficiency and long life cicles. Also a high 20C rating of discharge.</p>
-
-                                      <p>To determine the requirements of a the battery pack:<p>
-                                      <ul>
-                                        <li>For a 30 minute maximum run time: Ah = (12.5 A)*(4motors)*(0.5h) = 25Ah</li>
-                                      </ul>
-
-                                      <p>The distribution of power was done using TI’s LM2678 buck converters. The converters used where from 13.2V to 5V and 9V. This converters need a circuit designed to stabilize the output voltage.</p>
-
-                                      <p>Safety measures are part of the requirements of using high voltage/currents batteries. A kill switch circuit was design in order to cut power to the motors in case batteries fall under the recommended voltage.</p>
-
-                                      <p>EagleCAD was used in order to design the PCB for the kill switch. A schematic and board layouts were made with all the necessary files that manufacturers need to print the PCB were generated.</p>
+                                      <p>The power systems team is in charge of creating all the circuits to distribute the power in different voltages to the different components. Also, the team is in charge of regulating voltages and developing a kill switch to turn off the AUV in case of emergency. The team is also in charge of safely handling, storing and utilizing the LiPo batteries used in our AUV. </p>
 
                                     </div>
                                     <div class="clearfix"></div>
